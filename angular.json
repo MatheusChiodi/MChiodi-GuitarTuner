@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/MChiodi-GuitarTuner/"
           },
           "configurations": {
             "production": {
