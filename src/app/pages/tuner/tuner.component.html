@@ -1,0 +1,58 @@
+<div class="w-full h-screen flex flex-col items-center justify-center">
+  <div
+    class="max-h-screen relative bg-[#172029] min-w-[320px] sm:min-w-[420px] lg:min-w-[520px] min-h-96 rounded-t-[250px] rounded-e-[120px] rounded-s-[120px] shadow-2xl flex flex-col items-center justify-between border-[10px] border-[#213141] overflow-hidden"
+  >
+    <div
+      class="absolute top-10 left-1/2 transform -translate-x-1/2 z-10"
+      [style.transform]="'translateX(-50%) rotate(' + detune + 'deg)'"
+    >
+      <div
+        class="w-[20px] h-[180px] bg-[#4d9263] rounded-b-full shadow-2xl"
+        style="clip-path: polygon(50% 0%, 85% 100%, 15% 100%)"
+      ></div>
+    </div>
+
+    <div class="absolute top-0 left-0 w-full h-[180px] pointer-events-none">
+      <div
+        class="absolute left-[10%] top-[95%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[22px] font-semibold"
+      >
+        -50
+      </div>
+      <div
+        class="absolute left-[25%] top-[35%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[22px] font-semibold"
+      >
+        -10
+      </div>
+      <div
+        class="absolute left-1/2 top-[10%] transform -translate-x-1/2 -translate-y-1/2 text-white text-[22px] font-semibold"
+      >
+        0
+      </div>
+      <div
+        class="absolute right-[25%] top-[35%] transform translate-x-1/2 -translate-y-1/2 text-white text-text-[22px] font-semibold"
+      >
+        +10
+      </div>
+      <div
+        class="absolute right-[10%] top-[95%] transform translate-x-1/2 -translate-y-1/2 text-white text-text-[22px] font-semibold"
+      >
+        +50
+      </div>
+    </div>
+
+    <div
+      class="absolute bottom-0 bg-[#18212a] w-full h-[120px] flex justify-center items-center text-center text-white text-6xl font-bold shadow-2xl border-t-[4px] border-s-[4px] border-e-[4px] border-[#27313d] rounded-full"
+    >
+      {{ note }}
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <button
+      (click)="toggleTuner()"
+      class="px-10 py-3 bg-[#1E2A33] text-white text-lg font-semibold rounded-md border border-[#2c3e50] hover:bg-[#2a3743] transition duration-300 shadow-xl cursor-pointer"
+    >
+      {{ buttonLabel }}
+    </button>
+  </div>
+</div>

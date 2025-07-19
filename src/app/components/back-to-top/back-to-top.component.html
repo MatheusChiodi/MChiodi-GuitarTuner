@@ -1,0 +1,23 @@
+<button
+  *ngIf="visible"
+  (click)="scrollToTop()"
+  class="fixed bottom-4 right-4 z-[999] rounded-full bg-[#4d9263] p-2 text-white shadow-2xl transition hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#4d9263] cursor-pointer"
+  aria-label="Voltar ao topo"
+  title="Voltar ao topo"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-arrow-up"
+    viewBox="0 0 24 24"
+  >
+    <path d="M12 19V5" />
+    <path d="m5 12 7-7 7 7" />
+  </svg>
+</button>
